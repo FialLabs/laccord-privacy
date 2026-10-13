@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confidentialité — L'Accord by Elixir Vin</title>
+<meta name="description" content="Politique de confidentialité et suppression de compte de l'application L'Accord, éditée par la SARL ELIXIR-VIN.">
+<style>
+  /* Une étiquette de bouteille posée sur une nappe sombre.
+     Contrastes calculés, pas estimés : encre 14,0:1 et encre sourde 6,9:1 sur
+     l'étiquette, enseigne 8,1:1 sur l'étiquette, pied de page 13,6:1 sur la nappe. */
+  :root {
+    --nappe: #2e1620;
+    --nappe-sombre: #1d0e14;
+    --etiquette: #f8f3ea;
+    --encre: #2a2320;
+    --encre-sourde: #5c5248;
+    --enseigne: #8a2135;
+    --trait: #e4dac9;
+    --clair: #efe6d8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    background: radial-gradient(ellipse at 50% 0%, var(--nappe) 0%, var(--nappe-sombre) 100%);
+    color: var(--encre);
+    min-height: 100vh;
+    padding: 40px 20px 60px;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--etiquette);
+    border-radius: 16px;
+    padding: 40px clamp(20px, 5vw, 48px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  }
+  h1 { color: var(--enseigne); font-size: 26px; line-height: 1.25; margin: 0 0 6px; }
+  .updated { color: var(--encre-sourde); font-size: 13px; margin: 0 0 24px; }
+  nav { margin: 0 0 32px; font-size: 15px; }
+  nav a { margin-right: 18px; display: inline-block; }
+  h2 { font-size: 20px; margin: 40px 0 6px; padding-top: 12px; border-top: 1px solid var(--trait); }
+  h3 { font-size: 17px; margin: 26px 0 8px; }
+  p, li, td, th { line-height: 1.6; font-size: 15px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--enseigne); }
+  .phrase { background: #f2e8ea; border-left: 3px solid var(--enseigne); padding: 14px 18px; border-radius: 8px; margin: 22px 0; }
+  .phrase p { margin: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 18px 0; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--trait); }
+  th { font-size: 14px; color: var(--encre-sourde); font-weight: 600; }
+  .identite { font-style: normal; }
+  .identite p { margin: 2px 0; }
+  footer { text-align: center; color: var(--clair); font-size: 13px; margin-top: 28px; }
+  footer a { color: var(--clair); }
+</style>
+</head>
+<body>
+<main>
+  <h1>L'Accord — confidentialité et suppression de compte</h1>
+  <p class="updated">En vigueur au 13 octobre 2026.</p>
+
+  <nav>
+    <a href="#confidentialite">Politique de confidentialité</a>
+    <a href="#supprimer">Supprimer votre compte</a>
+  </nav>
+
+  <h2 id="confidentialite">Politique de confidentialité</h2>
+
+  <div class="phrase">
+    <p><strong>L'Accord vous demande ce qu'il faut pour vous livrer du vin, et rien de plus.</strong>
+    Pas de publicité, pas de mesure d'audience, pas de pistage : l'application n'embarque aucun outil
+    de ce genre. Votre numéro de carte ne nous parvient jamais — il va directement à Stripe.</p>
+  </div>
+
+  <h3>Qui est responsable de vos données</h3>
+  <div class="identite">
+    <p><strong>SARL ELIXIR-VIN</strong>, au capital de 6 000,00 €</p>
+    <p>24 rue du Chevalier de la Barre, 80520 Woincourt, France</p>
+    <p>RCS Amiens 940 700 461 — SIRET 940 700 461 00012 — TVA FR79940700461</p>
+    <p>Pour toute question sur cette politique ou pour exercer vos droits :
+      <a href="mailto:elodie.rudi@elixir-vin.com">elodie.rudi@elixir-vin.com</a></p>
+  </div>
+
+  <h3>Ce que nous collectons, pourquoi, et combien de temps</h3>
+  <table>
+    <tr><th>Données</th><th>Pourquoi</th><th>Base légale</th><th>Conservation</th></tr>
+    <tr>
+      <td>Adresse électronique, mot de passe (ou connexion Google), prénom, nom</td>
+      <td>Créer et gérer votre compte</td>
+      <td>Exécution du contrat</td>
+      <td>Jusqu'à la suppression de votre compte</td>
+    </tr>
+    <tr>
+      <td>Téléphone, adresse de livraison</td>
+      <td>Vous livrer</td>
+      <td>Exécution du contrat</td>
+      <td>Jusqu'à la suppression de votre compte</td>
+    </tr>
+    <tr>
+      <td>Date de naissance, date et adresse IP de l'inscription, version des conditions acceptées</td>
+      <td>Prouver que nous avons vérifié votre majorité et recueilli votre accord, comme la loi nous
+          l'impose pour la vente d'alcool</td>
+      <td>Obligation légale</td>
+      <td>Tant que le compte existe, puis cinq ans</td>
+    </tr>
+    <tr>
+      <td>Commandes : vins, quantités, montants, adresse ou point relais, adresse électronique, téléphone</td>
+      <td>Traiter la commande, la livrer, et tenir notre comptabilité</td>
+      <td>Exécution du contrat, puis obligation légale</td>
+      <td>Dix ans, durée imposée aux pièces comptables</td>
+    </tr>
+    <tr>
+      <td>Vos recherches de plats et vos vins favoris</td>
+      <td>Vous les retrouver d'une visite à l'autre</td>
+      <td>Exécution du contrat</td>
+      <td>Jusqu'à la suppression de votre compte</td>
+    </tr>
+    <tr>
+      <td>Les vins que vous ouvrez depuis un accord</td>
+      <td>Savoir quels accords servent, pour améliorer l'application</td>
+      <td>Intérêt légitime</td>
+      <td>Treize mois</td>
+    </tr>
+    <tr>
+      <td>Les plats que vous nous proposez</td>
+      <td>Vous répondre et enrichir les accords</td>
+      <td>Intérêt légitime</td>
+      <td>Un an après notre réponse</td>
+    </tr>
+  </table>
+
+  <h3>Le paiement</h3>
+  <p>Le paiement est traité par <strong>Stripe</strong>. Votre numéro de carte est saisi dans le module de
+  Stripe et ne passe jamais par nos serveurs : nous ne le voyons pas, nous ne l'enregistrons pas. Nous ne
+  conservons que la référence du paiement, qui nous sert à rattacher votre règlement à votre commande.</p>
+
+  <h3>Qui reçoit vos données</h3>
+  <p>À l'intérieur d'Elixir-Vin : <strong>Rudi Fial et Élodie Delahaye</strong>, gérants, et le développeur de
+  l'application, qui dispose d'un accès d'administration pour l'entretenir.</p>
+  <p>À l'extérieur, uniquement des prestataires techniques, chacun pour sa part :</p>
+  <ul>
+    <li><strong>Google (Firebase)</strong> — les comptes, la base de données, les fichiers et les fonctions serveur ;</li>
+    <li><strong>Stripe</strong> — le paiement ;</li>
+    <li><strong>Resend</strong> — l'envoi des courriels de commande ;</li>
+    <li><strong>Mondial Relay</strong> — la recherche des points relais, qui reçoit votre code postal et votre ville ;</li>
+    <li><strong>la Base Adresse Nationale</strong> (<a href="https://adresse.data.gouv.fr/">api-adresse.data.gouv.fr</a>,
+      service public français) — qui reçoit votre adresse de livraison pour calculer si vous êtes dans notre zone
+      de livraison locale gratuite.</li>
+  </ul>
+  <p>Nous ne vendons vos données à personne et nous ne les transmettons à aucun annonceur.</p>
+
+  <h3>Hors de l'Union européenne</h3>
+  <p>Nous disons les choses telles qu'elles sont. La base de données, les fichiers et les fonctions qui traitent
+  vos commandes et vos paiements tournent en <strong>Belgique</strong> (région <em>europe-west1</em> de Google).
+  <strong>Une exception :</strong> la fonction qui enregistre votre inscription — et donc votre date de naissance
+  et l'adresse IP de ce moment-là — tourne aujourd'hui dans un centre de données de Google aux
+  <strong>États-Unis</strong> (région <em>us-central1</em>). Stripe et Resend sont par ailleurs des sociétés
+  américaines. Ces transferts reposent sur les clauses contractuelles types de la Commission européenne et sur
+  les engagements de ces prestataires.</p>
+
+  <h3>Vos droits</h3>
+  <p>Vous pouvez demander à accéder à vos données, à les corriger, à les effacer, à en limiter l'usage, à vous
+  opposer à certains traitements, et à les recevoir dans un format réutilisable. Écrivez à
+  <a href="mailto:elodie.rudi@elixir-vin.com">elodie.rudi@elixir-vin.com</a> : nous répondons sous un mois.</p>
+  <p>Si notre réponse ne vous convient pas, vous pouvez saisir la Commission nationale de l'informatique et des
+  libertés, <a href="https://www.cnil.fr/">www.cnil.fr</a>.</p>
+
+  <h3>Traceurs et publicité</h3>
+  <p>L'application n'utilise <strong>aucun</strong> outil de mesure d'audience, aucun rapporteur de plantage et
+  aucune régie publicitaire. Il n'y a ni Firebase Analytics, ni Crashlytics, ni AdMob dans son code.</p>
+
+  <h2 id="supprimer">Supprimer votre compte</h2>
+
+  <p>Deux chemins, au choix :</p>
+  <ul>
+    <li><strong>dans l'application</strong> — Mon compte, puis « Supprimer mon compte » ;</li>
+    <li><strong>par écrit</strong> — une demande à <a href="mailto:elodie.rudi@elixir-vin.com">elodie.rudi@elixir-vin.com</a>
+      depuis l'adresse électronique de votre compte.</li>
+  </ul>
+
+  <p><strong>Ce qui est effacé immédiatement :</strong> votre identifiant de connexion, votre profil (nom,
+  téléphone, adresse, date de naissance), vos vins favoris, votre historique de recherches et les preuves de
+  votre acceptation des conditions.</p>
+
+  <p><strong>Ce que nous devons garder, et pourquoi :</strong> vos commandes déjà passées, pendant dix ans. Ce
+  n'est pas un choix de notre part — la loi nous impose de conserver nos pièces comptables. Elles ne servent
+  alors qu'à cela.</p>
+
+  <h2>Mises à jour</h2>
+  <p>Cette politique porte une date. Si nous la modifions, la date change, et l'application vous redemande votre
+  accord lorsque la modification concerne vos droits.</p>
+
+</main>
+<footer>
+  <p>L'Accord est édité par la SARL ELIXIR-VIN. L'abus d'alcool est dangereux pour la santé, à consommer avec
+  modération. La vente d'alcool aux mineurs est interdite.</p>
+</footer>
+</body>
+</html>
