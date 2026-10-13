@@ -59,7 +59,7 @@
 <body>
 <main>
   <h1>L'Accord — confidentialité et suppression de compte</h1>
-  <p class="updated">En vigueur au 13 octobre 2026.</p>
+  <p class="updated">En vigueur au 13 octobre 2026, corrigée le même jour au soir.</p>
 
   <nav>
     <a href="#confidentialite">Politique de confidentialité</a>
@@ -103,13 +103,25 @@
       <td>Prouver que nous avons vérifié votre majorité et recueilli votre accord, comme la loi nous
           l'impose pour la vente d'alcool</td>
       <td>Obligation légale</td>
-      <td>Tant que le compte existe, puis cinq ans</td>
+      <td>Jusqu’à la suppression de votre compte : effacées avec lui</td>
     </tr>
     <tr>
       <td>Commandes : vins, quantités, montants, adresse ou point relais, adresse électronique, téléphone</td>
       <td>Traiter la commande, la livrer, et tenir notre comptabilité</td>
       <td>Exécution du contrat, puis obligation légale</td>
-      <td>Dix ans, durée imposée aux pièces comptables</td>
+      <td>Au moins dix ans : la loi comptable nous y oblige. Au-delà, aucune suppression automatique n’est en place à ce jour</td>
+    </tr>
+    <tr>
+      <td>Paniers dont le paiement a été commencé sans aboutir : articles, montants, adresse de livraison ou point relais, téléphone, adresse électronique</td>
+      <td>Retrouver votre commande quand le paiement se confirme</td>
+      <td>Exécution du contrat</td>
+      <td>Effacés dès que le paiement aboutit. Si le paiement n’aboutit jamais, ils restent : aucune suppression automatique n’est en place, et la suppression de compte n’y touche pas</td>
+    </tr>
+    <tr>
+      <td>Le résultat du calcul de votre zone de livraison (dans la zone gratuite, ou non)</td>
+      <td>Appliquer la gratuité sans recalculer au moment du paiement</td>
+      <td>Exécution du contrat</td>
+      <td>Conservé après la suppression du compte : aucune suppression automatique n’est en place</td>
     </tr>
     <tr>
       <td>Vos recherches de plats et vos vins favoris</td>
@@ -118,16 +130,16 @@
       <td>Jusqu'à la suppression de votre compte</td>
     </tr>
     <tr>
-      <td>Les vins que vous ouvrez depuis un accord</td>
+      <td>Les vins suggérés que vous ajoutez au panier depuis un accord : le vin, le plat, et le moment</td>
       <td>Savoir quels accords servent, pour améliorer l'application</td>
       <td>Intérêt légitime</td>
-      <td>Treize mois</td>
+      <td>Sans limite de durée à ce jour : aucune purge automatique n’est en place, et ces lignes ne sont pas effacées avec le compte</td>
     </tr>
     <tr>
       <td>Les plats que vous nous proposez</td>
       <td>Vous répondre et enrichir les accords</td>
       <td>Intérêt légitime</td>
-      <td>Un an après notre réponse</td>
+      <td>Sans limite de durée à ce jour : elles ne sont pas effacées avec le compte</td>
     </tr>
   </table>
 
@@ -137,7 +149,7 @@
   conservons que la référence du paiement, qui nous sert à rattacher votre règlement à votre commande.</p>
 
   <h3>Qui reçoit vos données</h3>
-  <p>À l'intérieur d'Elixir-Vin : <strong>Rudi Fial et Élodie Delahaye</strong>, gérants, et le développeur de
+  <p>À l'intérieur d'Elixir-Vin : <strong>Rudi Fial et Élodie Delahaye</strong>, et le développeur de
   l'application, qui dispose d'un accès d'administration pour l'entretenir.</p>
   <p>À l'extérieur, uniquement des prestataires techniques, chacun pour sa part :</p>
   <ul>
@@ -151,19 +163,26 @@
   </ul>
   <p>Nous ne vendons vos données à personne et nous ne les transmettons à aucun annonceur.</p>
 
-  <h3>Hors de l'Union européenne</h3>
-  <p>Nous disons les choses telles qu'elles sont. La base de données, les fichiers et les fonctions qui traitent
-  vos commandes et vos paiements tournent en <strong>Belgique</strong> (région <em>europe-west1</em> de Google).
-  <strong>Une exception :</strong> la fonction qui enregistre votre inscription — et donc votre date de naissance
-  et l'adresse IP de ce moment-là — tourne aujourd'hui dans un centre de données de Google aux
-  <strong>États-Unis</strong> (région <em>us-central1</em>). Stripe et Resend sont par ailleurs des sociétés
-  américaines. Ces transferts reposent sur les clauses contractuelles types de la Commission européenne et sur
-  les engagements de ces prestataires.</p>
+  <h3>Hors de l’Union européenne</h3>
+  <p>Nous disons les choses telles qu’elles sont, après avoir regardé le code. La base de données est hébergée en <strong>Europe</strong>. Les fonctions serveur qui traitent vos
+  commandes, vos paiements et vos livraisons tournent en <strong>Belgique</strong> (région
+  <em>europe-west1</em>).</p>
+  <p><strong>Mais sept fonctions tournent aujourd’hui aux États-Unis</strong> (région <em>us-central1</em> de
+  Google), parce qu’aucune région ne leur a été assignée :</p>
+  <ul>
+    <li>celle qui <strong>enregistre votre inscription</strong> — elle reçoit donc votre date de naissance et
+      l’adresse IP de ce moment-là ;</li>
+    <li>celle qui <strong>supprime votre compte</strong> ;</li>
+    <li>cinq fonctions d’administration, qui ne traitent que les données des administrateurs.</li>
+  </ul>
+  <p>Stripe et Resend sont par ailleurs des sociétés américaines. Le cadre contractuel précis de ces
+  transferts n’est pas encore décrit ici : nous le compléterons après examen des contrats de ces
+  prestataires.</p>
 
   <h3>Vos droits</h3>
   <p>Vous pouvez demander à accéder à vos données, à les corriger, à les effacer, à en limiter l'usage, à vous
   opposer à certains traitements, et à les recevoir dans un format réutilisable. Écrivez à
-  <a href="mailto:elodie.rudi@elixir-vin.com">elodie.rudi@elixir-vin.com</a> : nous répondons sous un mois.</p>
+  <a href="mailto:elodie.rudi@elixir-vin.com">elodie.rudi@elixir-vin.com</a> : la loi nous donne un mois pour répondre.</p>
   <p>Si notre réponse ne vous convient pas, vous pouvez saisir la Commission nationale de l'informatique et des
   libertés, <a href="https://www.cnil.fr/">www.cnil.fr</a>.</p>
 
@@ -184,13 +203,24 @@
   téléphone, adresse, date de naissance), vos vins favoris, votre historique de recherches et les preuves de
   votre acceptation des conditions.</p>
 
-  <p><strong>Ce que nous devons garder, et pourquoi :</strong> vos commandes déjà passées, pendant dix ans. Ce
-  n'est pas un choix de notre part — la loi nous impose de conserver nos pièces comptables. Elles ne servent
-  alors qu'à cela.</p>
+  <p><strong>Ce qui est conservé :</strong></p>
+  <ul>
+    <li><strong>vos commandes déjà passées</strong>, au moins dix ans : la loi nous impose de conserver nos
+      pièces comptables. Au-delà de ce délai, aucune suppression automatique n’est en place à ce jour ;</li>
+    <li><strong>les paniers dont le paiement a été commencé sans aboutir</strong> — il peut y en avoir
+      plusieurs : chaque passage par l’écran de paiement en crée un, et seul celui du paiement abouti est
+      effacé. Chacun contient votre adresse, votre téléphone, votre adresse électronique et les articles ;</li>
+    <li><strong>le résultat du calcul de votre zone de livraison</strong> ;</li>
+    <li><strong>les vins suggérés que vous avez ajoutés au panier depuis un accord, et les plats que vous nous
+      avez proposés.</strong>
+      Ces lignes ne sont pas effacées aujourd’hui par la suppression de compte. Si vous voulez qu’elles le
+      soient, écrivez-nous : nous les supprimerons à la main.</li>
+  </ul>
 
   <h2>Mises à jour</h2>
-  <p>Cette politique porte une date. Si nous la modifions, la date change, et l'application vous redemande votre
-  accord lorsque la modification concerne vos droits.</p>
+  <p>Cette politique porte une date : si nous la modifions, la date change. L’application, elle, vous redemande
+  votre accord quand une nouvelle version des <em>conditions d’utilisation</em> paraît — ce mécanisme existe
+  pour les conditions, pas pour la présente politique.</p>
 
 </main>
 <footer>
