@@ -54,6 +54,15 @@
   .identite p { margin: 2px 0; }
   footer { text-align: center; color: var(--clair); font-size: 13px; margin-top: 28px; }
   footer a { color: var(--clair); }
+  /* Téléphone : le tableau à quatre colonnes débordait de 47 px à 375 px de
+     large (page rognée à droite, mesuré le 03/11/2026). Marges resserrées,
+     colonnes de largeur fixe, mots coupés avec césure française. */
+  @media (max-width: 560px) {
+    body { padding: 16px 10px 40px; }
+    main { padding: 28px 16px; border-radius: 12px; }
+    table { table-layout: fixed; }
+    th, td { padding: 8px 6px 8px 0; font-size: 14px; overflow-wrap: anywhere; hyphens: auto; }
+  }
 </style>
 </head>
 <body>
