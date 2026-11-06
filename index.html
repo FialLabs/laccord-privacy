@@ -68,7 +68,7 @@
 <body>
 <main>
   <h1>L'Accord — confidentialité et suppression de compte</h1>
-  <p class="updated">En vigueur au 13 octobre 2026, corrigée le même jour au soir.</p>
+  <p class="updated">En vigueur au 6 novembre 2026. Version précédente : 13 octobre 2026.</p>
 
   <nav>
     <a href="#confidentialite">Politique de confidentialité</a>
@@ -124,13 +124,13 @@
       <td>Paniers dont le paiement a été commencé sans aboutir : articles, montants, adresse de livraison ou point relais, téléphone, adresse électronique</td>
       <td>Retrouver votre commande quand le paiement se confirme</td>
       <td>Exécution du contrat</td>
-      <td>Effacés dès que le paiement aboutit. Si le paiement n’aboutit jamais, ils restent : aucune suppression automatique n’est en place, et la suppression de compte n’y touche pas</td>
+      <td>Effacés dès que le paiement aboutit. Si le paiement n’aboutit jamais, ils restent jusqu’à la suppression de votre compte : effacés avec lui</td>
     </tr>
     <tr>
       <td>Le résultat du calcul de votre zone de livraison (dans la zone gratuite, ou non)</td>
       <td>Appliquer la gratuité sans recalculer au moment du paiement</td>
       <td>Exécution du contrat</td>
-      <td>Conservé après la suppression du compte : aucune suppression automatique n’est en place</td>
+      <td>Jusqu’à la suppression de votre compte : effacé avec lui</td>
     </tr>
     <tr>
       <td>Vos recherches de plats et vos vins favoris</td>
@@ -142,13 +142,21 @@
       <td>Les vins suggérés que vous ajoutez au panier depuis un accord : le vin, le plat, et le moment</td>
       <td>Savoir quels accords servent, pour améliorer l'application</td>
       <td>Intérêt légitime</td>
-      <td>Sans limite de durée à ce jour : aucune purge automatique n’est en place, et ces lignes ne sont pas effacées avec le compte</td>
+      <td>Jusqu’à la suppression de votre compte : effacées avec lui</td>
     </tr>
     <tr>
-      <td>Les plats que vous nous proposez</td>
-      <td>Vous répondre et enrichir les accords</td>
+      <td>Les plats que vous nous proposez, et les messages que vous nous écrivez depuis l’application
+        (Mon compte, Contact) : votre texte, la date, et notre réponse</td>
+      <td>Vous répondre et, pour les plats, enrichir les accords</td>
       <td>Intérêt légitime</td>
-      <td>Sans limite de durée à ce jour : elles ne sont pas effacées avec le compte</td>
+      <td>Jusqu’à la suppression de votre compte : effacés avec lui</td>
+    </tr>
+    <tr>
+      <td>Comptes administrateurs d’Elixir-Vin seulement : le jeton de notification de leur appareil (un identifiant
+        technique fourni par Google, sans rapport avec les clients)</td>
+      <td>Prévenir les administrateurs d’une nouvelle commande ou d’un nouveau message</td>
+      <td>Intérêt légitime</td>
+      <td>Jusqu’à ce que Google signale ce jeton comme périmé : il est alors effacé</td>
     </tr>
   </table>
 
@@ -209,22 +217,21 @@
   </ul>
 
   <p><strong>Ce qui est effacé immédiatement :</strong> votre identifiant de connexion, votre profil (nom,
-  téléphone, adresse, date de naissance), vos vins favoris, votre historique de recherches et les preuves de
-  votre acceptation des conditions.</p>
+  téléphone, adresse, date de naissance), vos vins favoris, votre historique de recherches, les preuves de
+  votre acceptation des conditions, les paniers dont le paiement n’a pas abouti, le résultat du calcul de votre
+  zone de livraison, les vins suggérés que vous avez ajoutés au panier depuis un accord, et les plats et messages
+  que vous nous avez envoyés depuis l’application.</p>
 
-  <p><strong>Ce qui est conservé :</strong></p>
-  <ul>
-    <li><strong>vos commandes déjà passées</strong>, au moins dix ans : la loi nous impose de conserver nos
-      pièces comptables. Au-delà de ce délai, aucune suppression automatique n’est en place à ce jour ;</li>
-    <li><strong>les paniers dont le paiement a été commencé sans aboutir</strong> — il peut y en avoir
-      plusieurs : chaque passage par l’écran de paiement en crée un, et seul celui du paiement abouti est
-      effacé. Chacun contient votre adresse, votre téléphone, votre adresse électronique et les articles ;</li>
-    <li><strong>le résultat du calcul de votre zone de livraison</strong> ;</li>
-    <li><strong>les vins suggérés que vous avez ajoutés au panier depuis un accord, et les plats que vous nous
-      avez proposés.</strong>
-      Ces lignes ne sont pas effacées aujourd’hui par la suppression de compte. Si vous voulez qu’elles le
-      soient, écrivez-nous : nous les supprimerons à la main.</li>
-  </ul>
+  <p><strong>Ce qui est conservé :</strong> vos commandes payées, au moins dix ans : la loi nous impose de
+  conserver nos pièces comptables. Au-delà de ce délai, aucune suppression automatique n’est en place à ce
+  jour.</p>
+
+  <p><strong>Si un paiement est en cours</strong> au moment de la suppression, celle-ci est refusée et rien n’est
+  effacé : réessayez quelques minutes plus tard. Un paiement commencé sans aboutir est annulé.</p>
+
+  <p><strong>Ce qui ne dépend pas de cette suppression :</strong> Stripe garde la trace de vos tentatives de
+  paiement (le montant et un identifiant technique de votre compte), et Resend celle des courriels déjà envoyés,
+  chacun selon ses propres durées.</p>
 
   <h2>Mises à jour</h2>
   <p>Cette politique porte une date : si nous la modifions, la date change. L’application, elle, vous redemande
